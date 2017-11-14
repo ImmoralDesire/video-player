@@ -1,0 +1,112 @@
+#player {
+  width: 854px;
+  height: 480px;
+  position: relative;
+  margin: auto;
+}
+
+#player video {
+  width: 100%;
+  height: 100%;
+}
+
+#player #controller {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0));
+  width: 100%;
+  min-height: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2147483647;
+}
+
+#components {
+  position: relative;
+  width: 98%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 2%;
+  height: 3px;
+  cursor: pointer;
+}
+
+#slider #sliderbar {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+
+#slider #sliderbar #thumb {
+  width: 5px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: red;
+  position: relative;
+  bottom: 5px;
+}
+
+#buffer {
+  position: absolute;
+  height: 100%;
+  background-color: gray;
+}
+
+#before-thumb {
+  position: absolute;
+  height: 100%;
+  background-color: blue;
+}
+
+#after-thumb {
+  position: absolute;
+  height: 100%;
+  background-color: white;
+}
+
+#bottom-controls {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+}
+
+#pauser i {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#time {
+  color: white;
+  position: absolute;
+  margin-top: 5px;
+  left: 40px;
+}
+
+#fullscreen i {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+video::-webkit-media-controls-enclosure {
+  display:none !important;
+}
+
+:-webkit-full-screen {
+  background-color: white;
+  z-index: 1;
+}
+
+user agent stylesheetvideo {
+  object-fit: contain;
+}

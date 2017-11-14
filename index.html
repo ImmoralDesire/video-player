@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Homework Adder</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>-->
+  </head>
+  <body>
+    <div id="player">
+      <video id="video" preload="metadata">
+        <source src="./assets/videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="controller">
+        <div id="components">
+          <div id="slider" val="0" min="0" max="100">
+            <div id="sliderbar">
+              <div id="before-thumb"></div>
+              <div id="after-thumb"></div>
+              <div id="buffer"></div>
+              <div id="thumb"></div>
+            </div>
+          </div>
+          <div id="bottom-controls">
+            <div id="pauser"><i class="material-icons">play_arrow</i></div>
+            <div id="time">0:00 / 0:00</div>
+            <div id="fullscreen"><i class="material-icons">fullscreen</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
